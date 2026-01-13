@@ -3,7 +3,7 @@ let secret = 32;
 let x = 0
 let resposta = prompt('Digite o seu palpite, deve ser apenas um número');
 while (resposta != secret) {
-    x += 1
+    x++
     console.log(`Iteração numero ${x}`)
     if (resposta > secret) {
         alert('Seu palpite foi muito alto, tente algo menor');
@@ -13,6 +13,8 @@ while (resposta != secret) {
     }
     resposta = prompt('Digite o seu palpite, deve ser apenas um número');
 }
+
+alert('Parabéns, você acertou o número!!')
 
 // Desafios aula 1
 
@@ -50,3 +52,9 @@ if (numeroDigitado > 0)
     alert('O número é positivo')
 else
     alert('O número é negativo')
+
+// Desafio aula 3
+
+let count
+for (count = 0; count < 10; count++)
+    console.log(`Iteração número ${count}`)
