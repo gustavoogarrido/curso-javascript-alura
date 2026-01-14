@@ -5,8 +5,10 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-alert('Você terá que tentar adivinhar o número secreto que está entre 1 e 100. Boa sorte!');
-let secret = parseInt(Math.random() * 100 + 1);
+const max = 100
+
+alert(`Você terá que tentar adivinhar o número secreto que está entre 1 e ${max}. Boa sorte!`);
+let secret = parseInt(Math.random() * max + 1);
 let x = 0
 let resposta = prompt('Digite o seu palpite, deve ser apenas um número');
 while (resposta != secret) {
